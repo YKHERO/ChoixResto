@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChoixResto.Models
 {
- 
-        public interface IDal : IDisposable
-        {
-            List<Resto> ObtientTousLesRestaurants();
-        }
-    
+    public interface IDal : IDisposable
+    {
+        void CreerRestaurant(string nom, string telephone);
+        List<Resto> ObtientTousLesRestaurants();
+    }
+
 }
